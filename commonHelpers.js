@@ -2,5 +2,5 @@ import{S as s}from"./assets/vendor-10cb7c31.js";(function(){const i=document.cre
   flex-wrap: wrap;
   gap: 24px 24px;
   flex-direction: row;
-  list-style-type: none`;const c=document.createDocumentFragment();l.forEach(a=>{const i=document.createElement("li");i.classList.add("gallery-item");const p=document.createElement("a");p.classList.add("gallery-link"),p.href=a.original;const o=document.createElement("img");o.classList.add("gallery-image"),o.src=a.preview,o.setAttribute("src",a.original),o.alt=a.description,o.style.width="360px",o.style.height="200px",p.addEventListener("click",e=>{e.preventDefault()}),i.appendChild(p),p.appendChild(o),c.appendChild(i)});n.appendChild(c);new s(".gallery a");
+  list-style-type: none;`;const c=document.createDocumentFragment();l.forEach(a=>{const i=document.createElement("li");i.classList.add("gallery-item");const p=document.createElement("a");p.classList.add("gallery-link"),p.href=a.original;const o=document.createElement("img");o.classList.add("gallery-image"),o.src=a.preview,o.setAttribute("src",a.original),o.alt=a.description,o.style.width="360px",o.style.height="200px",p.addEventListener("click",e=>{e.preventDefault()}),i.appendChild(p),p.appendChild(o),c.appendChild(i)});n.appendChild(c);new s(".gallery a",{captionsData:"alt",captionDelay:250});
 //# sourceMappingURL=commonHelpers.js.map
