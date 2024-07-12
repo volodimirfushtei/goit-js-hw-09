@@ -70,7 +70,7 @@ gallery.style.cssText = `display: flex;
   flex-wrap: wrap;
   gap: 24px 24px;
   flex-direction: row;
-  list-style-type: none`;
+  list-style-type: none;`;
 
 const fragment = document.createDocumentFragment();
 images.forEach(image => {
@@ -86,7 +86,6 @@ images.forEach(image => {
   img.alt = image.description;
   img.style.width = `360px`;
   img.style.height = `200px`;
-
   a.addEventListener('click', event => {
     event.preventDefault();
   });
@@ -98,5 +97,8 @@ images.forEach(image => {
 gallery.appendChild(fragment);
 
 import SimpleLightbox from 'simplelightbox';
-const lightbox = new SimpleLightbox('.gallery a');
 import 'simplelightbox/dist/simple-lightbox.min.css';
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
