@@ -96,7 +96,7 @@ images.forEach(image => {
   fragment.appendChild(li);
 });
 gallery.appendChild(fragment);
-// Описаний в документації
+
 import SimpleLightbox from 'simplelightbox';
 const lightbox = new SimpleLightbox('.gallery a');
 import 'simplelightbox/dist/simple-lightbox.min.css';
