@@ -8,26 +8,27 @@ const submitButton = form.querySelector('button');
 
 form.style.display = 'flex';
 form.style.flexDirection = 'column';
-form.style.alignItems = 'center';
+
 form.style.width = '408px';
 form.style.height = '296px';
-form.style.justifyContent = 'center';
-form.style.padding = '24px';
-form.style.gap = '8px';
-
+form.style.alignItems = 'centre';
+form.style.justifyContent = 'centre';
 emailInput.style.width = '360px';
 emailInput.style.height = '40px';
-
+emailInput.style.marginTop = '8px';
+emailInput.style.marginBottom = '8px';
 textareaInput.style.width = '360px';
 textareaInput.style.height = '80px';
+textareaInput.style.marginTop = '8px';
 
 submitButton.style.width = '95px';
 submitButton.style.height = '40px';
 submitButton.style.background = '#4E75FF';
 submitButton.style.cursor = 'pointer';
 submitButton.style.color = '#ffffff';
+submitButton.style.padding = '8px 16px';
 submitButton.style.borderRadius = '8px';
-
+submitButton.style.marginTop = '16px';
 form.addEventListener('input', function (event) {
   if (
     event.target.tagName.toLowerCase() === 'input' ||

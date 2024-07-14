@@ -82,16 +82,15 @@ images.forEach(image => {
   const img = document.createElement('img');
   img.classList.add('gallery-image');
   img.src = image.preview;
-  img.setAttribute('src', image.original);
+
   img.alt = image.description;
   img.style.width = `360px`;
   img.style.height = `200px`;
   a.addEventListener('click', event => {
     event.preventDefault();
   });
-  li.appendChild(a);
-
   a.appendChild(img);
+  li.appendChild(a);
   fragment.appendChild(li);
 });
 gallery.appendChild(fragment);
