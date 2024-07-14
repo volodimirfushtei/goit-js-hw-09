@@ -8,11 +8,10 @@ const submitButton = form.querySelector('button');
 
 form.style.display = 'flex';
 form.style.flexDirection = 'column';
-
+form.style.paddingTop = '48px';
 form.style.width = '408px';
 form.style.height = '296px';
-form.style.alignItems = 'centre';
-form.style.justifyContent = 'centre';
+
 emailInput.style.width = '360px';
 emailInput.style.height = '40px';
 emailInput.style.marginTop = '8px';
