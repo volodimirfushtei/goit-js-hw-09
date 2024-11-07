@@ -56,14 +56,6 @@ form.addEventListener('submit', function (event) {
   const messageValue = textareaInput.value.trim();
   if (emailValue && messageValue) {
     console.log("Об'єкт formData:", formData);
-    localStorage.removeItem(STORAGE_KEY);
-
-    formData.email = '';
-    formData.message = '';
-
-    emailInput.value = '';
-    textareaInput.value = '';
-    alert('Form send');
     event.preventDefault();
   } else {
     alert('Fill please all fields');
